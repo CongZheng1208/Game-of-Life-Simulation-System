@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wno-deprecated-declarations -Wno-deprecated-declarations -Wno-deprecated-declarations -Wno-deprecated-declarations -Wno-deprecated-declarations -Wno-deprecated-declarations -Wno-ignored-attributes -O3 -DNDEBUG   CMakeFiles/golGameGrid.dir/golGameGrid.cpp.o  -o ../../bin/golGameGrid 

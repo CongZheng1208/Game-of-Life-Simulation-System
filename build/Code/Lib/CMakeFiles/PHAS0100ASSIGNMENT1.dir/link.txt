@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../bin/libPHAS0100ASSIGNMENT1.a  CMakeFiles/PHAS0100ASSIGNMENT1.dir/golBasicTypes.cpp.o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golException.cpp.o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.o
+/usr/bin/ranlib ../../bin/libPHAS0100ASSIGNMENT1.a

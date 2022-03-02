@@ -1,0 +1,3 @@
+file(REMOVE_RECURSE
+  "../../bin/libPHAS0100ASSIGNMENT1.a"
+)
