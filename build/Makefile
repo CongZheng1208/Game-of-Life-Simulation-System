@@ -545,6 +545,19 @@ PHAS0100ASSIGNMENT1/fast:
 .PHONY : PHAS0100ASSIGNMENT1/fast
 
 #=============================================================================
+# Target rules for targets named golSimulator
+
+# Build rule for target.
+golSimulator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 golSimulator
+.PHONY : golSimulator
+
+# fast build rule for target.
+golSimulator/fast:
+	$(MAKE) -f Code/CommandLineApps/CMakeFiles/golSimulator.dir/build.make Code/CommandLineApps/CMakeFiles/golSimulator.dir/build
+.PHONY : golSimulator/fast
+
+#=============================================================================
 # Target rules for targets named golMyFirstApp
 
 # Build rule for target.
@@ -625,6 +638,7 @@ help:
 	@echo "... ContinuousTest"
 	@echo "... ContinuousSubmit"
 	@echo "... PHAS0100ASSIGNMENT1"
+	@echo "... golSimulator"
 	@echo "... golMyFirstApp"
 	@echo "... golCommandLineArgsTest"
 	@echo "... golBasicTest"

@@ -12,7 +12,7 @@
 
 =============================================================================*/
 
-#include "golGameGrid.h"
+#include "golGameOfLife.h"
 
 namespace gol {
 

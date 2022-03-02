@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+Code/CommandLineApps/CMakeFiles/golSimulator.dir/rule:
+	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f CMakeFiles/Makefile2 Code/CommandLineApps/CMakeFiles/golSimulator.dir/rule
+.PHONY : Code/CommandLineApps/CMakeFiles/golSimulator.dir/rule
+
+# Convenience name for target.
+golSimulator: Code/CommandLineApps/CMakeFiles/golSimulator.dir/rule
+
+.PHONY : golSimulator
+
+# fast build rule for target.
+golSimulator/fast:
+	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/golSimulator.dir/build.make Code/CommandLineApps/CMakeFiles/golSimulator.dir/build
+.PHONY : golSimulator/fast
+
+# Convenience name for target.
 Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/rule:
 	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f CMakeFiles/Makefile2 Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/rule
 .PHONY : Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/rule
@@ -209,6 +224,33 @@ golMyFirstApp.cpp.s:
 	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/golMyFirstApp.cpp.s
 .PHONY : golMyFirstApp.cpp.s
 
+golSimulator.o: golSimulator.cpp.o
+
+.PHONY : golSimulator.o
+
+# target to build an object file
+golSimulator.cpp.o:
+	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/golSimulator.dir/build.make Code/CommandLineApps/CMakeFiles/golSimulator.dir/golSimulator.cpp.o
+.PHONY : golSimulator.cpp.o
+
+golSimulator.i: golSimulator.cpp.i
+
+.PHONY : golSimulator.i
+
+# target to preprocess a source file
+golSimulator.cpp.i:
+	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/golSimulator.dir/build.make Code/CommandLineApps/CMakeFiles/golSimulator.dir/golSimulator.cpp.i
+.PHONY : golSimulator.cpp.i
+
+golSimulator.s: golSimulator.cpp.s
+
+.PHONY : golSimulator.s
+
+# target to generate assembly for a file
+golSimulator.cpp.s:
+	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/golSimulator.dir/build.make Code/CommandLineApps/CMakeFiles/golSimulator.dir/golSimulator.cpp.s
+.PHONY : golSimulator.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,10 +264,14 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... golSimulator"
 	@echo "... golMyFirstApp"
 	@echo "... golMyFirstApp.o"
 	@echo "... golMyFirstApp.i"
 	@echo "... golMyFirstApp.s"
+	@echo "... golSimulator.o"
+	@echo "... golSimulator.i"
+	@echo "... golSimulator.s"
 .PHONY : help
 
 
