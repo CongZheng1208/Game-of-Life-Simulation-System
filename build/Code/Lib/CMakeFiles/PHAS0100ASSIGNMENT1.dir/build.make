@@ -109,12 +109,26 @@ Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.s"
 	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Code/Lib/golGameGrid.cpp -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.s
 
+Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.o: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/flags.make
+Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.o: ../Code/Lib/golGameOfLife.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.o"
+	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.o -c /workspaces/PHAS0100Assignment1/Code/Lib/golGameOfLife.cpp
+
+Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.i"
+	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Code/Lib/golGameOfLife.cpp > CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.i
+
+Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.s"
+	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Code/Lib/golGameOfLife.cpp -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.s
+
 # Object files for target PHAS0100ASSIGNMENT1
 PHAS0100ASSIGNMENT1_OBJECTS = \
 "CMakeFiles/PHAS0100ASSIGNMENT1.dir/golBasicTypes.cpp.o" \
 "CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.o" \
 "CMakeFiles/PHAS0100ASSIGNMENT1.dir/golException.cpp.o" \
-"CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.o"
+"CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.o" \
+"CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.o"
 
 # External object files for target PHAS0100ASSIGNMENT1
 PHAS0100ASSIGNMENT1_EXTERNAL_OBJECTS =
@@ -123,9 +137,10 @@ bin/libPHAS0100ASSIGNMENT1.a: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golBas
 bin/libPHAS0100ASSIGNMENT1.a: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.o
 bin/libPHAS0100ASSIGNMENT1.a: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golException.cpp.o
 bin/libPHAS0100ASSIGNMENT1.a: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.o
+bin/libPHAS0100ASSIGNMENT1.a: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.o
 bin/libPHAS0100ASSIGNMENT1.a: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/build.make
 bin/libPHAS0100ASSIGNMENT1.a: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../../bin/libPHAS0100ASSIGNMENT1.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library ../../bin/libPHAS0100ASSIGNMENT1.a"
 	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && $(CMAKE_COMMAND) -P CMakeFiles/PHAS0100ASSIGNMENT1.dir/cmake_clean_target.cmake
 	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PHAS0100ASSIGNMENT1.dir/link.txt --verbose=$(VERBOSE)
 

@@ -545,19 +545,6 @@ PHAS0100ASSIGNMENT1/fast:
 .PHONY : PHAS0100ASSIGNMENT1/fast
 
 #=============================================================================
-# Target rules for targets named golGameGrid
-
-# Build rule for target.
-golGameGrid: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 golGameGrid
-.PHONY : golGameGrid
-
-# fast build rule for target.
-golGameGrid/fast:
-	$(MAKE) -f Code/Lib/CMakeFiles/golGameGrid.dir/build.make Code/Lib/CMakeFiles/golGameGrid.dir/build
-.PHONY : golGameGrid/fast
-
-#=============================================================================
 # Target rules for targets named golMyFirstApp
 
 # Build rule for target.
@@ -638,7 +625,6 @@ help:
 	@echo "... ContinuousTest"
 	@echo "... ContinuousSubmit"
 	@echo "... PHAS0100ASSIGNMENT1"
-	@echo "... golGameGrid"
 	@echo "... golMyFirstApp"
 	@echo "... golCommandLineArgsTest"
 	@echo "... golBasicTest"

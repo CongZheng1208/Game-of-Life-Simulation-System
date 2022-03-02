@@ -142,7 +142,6 @@ Code/CommandLineApps/clean: Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/cl
 
 # Recursive "all" directory target.
 Code/Lib/all: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/all
-Code/Lib/all: Code/Lib/CMakeFiles/golGameGrid.dir/all
 
 .PHONY : Code/Lib/all
 
@@ -153,7 +152,6 @@ Code/Lib/preinstall:
 
 # Recursive "clean" directory target.
 Code/Lib/clean: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/clean
-Code/Lib/clean: Code/Lib/CMakeFiles/golGameGrid.dir/clean
 
 .PHONY : Code/Lib/clean
 
@@ -940,12 +938,12 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/all:
 	$(MAKE) -f Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/build.make Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/depend
 	$(MAKE) -f Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/build.make Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target PHAS0100ASSIGNMENT1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target PHAS0100ASSIGNMENT1"
 .PHONY : Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/all
 
 # Build rule for subdir invocation for target.
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment1/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment1/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment1/build/CMakeFiles 0
 .PHONY : Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/rule
@@ -961,45 +959,18 @@ Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/clean:
 .PHONY : Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/clean
 
 #=============================================================================
-# Target rules for target Code/Lib/CMakeFiles/golGameGrid.dir
-
-# All Build rule for target.
-Code/Lib/CMakeFiles/golGameGrid.dir/all:
-	$(MAKE) -f Code/Lib/CMakeFiles/golGameGrid.dir/build.make Code/Lib/CMakeFiles/golGameGrid.dir/depend
-	$(MAKE) -f Code/Lib/CMakeFiles/golGameGrid.dir/build.make Code/Lib/CMakeFiles/golGameGrid.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=12,13 "Built target golGameGrid"
-.PHONY : Code/Lib/CMakeFiles/golGameGrid.dir/all
-
-# Build rule for subdir invocation for target.
-Code/Lib/CMakeFiles/golGameGrid.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment1/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 Code/Lib/CMakeFiles/golGameGrid.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment1/build/CMakeFiles 0
-.PHONY : Code/Lib/CMakeFiles/golGameGrid.dir/rule
-
-# Convenience name for target.
-golGameGrid: Code/Lib/CMakeFiles/golGameGrid.dir/rule
-
-.PHONY : golGameGrid
-
-# clean rule for target.
-Code/Lib/CMakeFiles/golGameGrid.dir/clean:
-	$(MAKE) -f Code/Lib/CMakeFiles/golGameGrid.dir/build.make Code/Lib/CMakeFiles/golGameGrid.dir/clean
-.PHONY : Code/Lib/CMakeFiles/golGameGrid.dir/clean
-
-#=============================================================================
 # Target rules for target Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir
 
 # All Build rule for target.
 Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/all: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/all
 	$(MAKE) -f Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/depend
 	$(MAKE) -f Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=14,15 "Built target golMyFirstApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=13,14 "Built target golMyFirstApp"
 .PHONY : Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/all
 
 # Build rule for subdir invocation for target.
 Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment1/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment1/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment1/build/CMakeFiles 0
 .PHONY : Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/rule
@@ -1021,12 +992,12 @@ Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/clean:
 Testing/CMakeFiles/golCommandLineArgsTest.dir/all: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/all
 	$(MAKE) -f Testing/CMakeFiles/golCommandLineArgsTest.dir/build.make Testing/CMakeFiles/golCommandLineArgsTest.dir/depend
 	$(MAKE) -f Testing/CMakeFiles/golCommandLineArgsTest.dir/build.make Testing/CMakeFiles/golCommandLineArgsTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=9,10,11 "Built target golCommandLineArgsTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=10,11,12 "Built target golCommandLineArgsTest"
 .PHONY : Testing/CMakeFiles/golCommandLineArgsTest.dir/all
 
 # Build rule for subdir invocation for target.
 Testing/CMakeFiles/golCommandLineArgsTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment1/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment1/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 Testing/CMakeFiles/golCommandLineArgsTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment1/build/CMakeFiles 0
 .PHONY : Testing/CMakeFiles/golCommandLineArgsTest.dir/rule
@@ -1048,12 +1019,12 @@ Testing/CMakeFiles/golCommandLineArgsTest.dir/clean:
 Testing/CMakeFiles/golBasicTest.dir/all: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/all
 	$(MAKE) -f Testing/CMakeFiles/golBasicTest.dir/build.make Testing/CMakeFiles/golBasicTest.dir/depend
 	$(MAKE) -f Testing/CMakeFiles/golBasicTest.dir/build.make Testing/CMakeFiles/golBasicTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=6,7,8 "Built target golBasicTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=7,8,9 "Built target golBasicTest"
 .PHONY : Testing/CMakeFiles/golBasicTest.dir/all
 
 # Build rule for subdir invocation for target.
 Testing/CMakeFiles/golBasicTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment1/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment1/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 Testing/CMakeFiles/golBasicTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment1/build/CMakeFiles 0
 .PHONY : Testing/CMakeFiles/golBasicTest.dir/rule

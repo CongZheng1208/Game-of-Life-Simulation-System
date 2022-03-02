@@ -10,6 +10,10 @@ Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golException.cpp.o: ../Code/Lib/golE
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.o: ../Code/Lib/golGameGrid.cpp
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.o: ../Code/Lib/golGameGrid.h
 
+Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.o: ../Code/Lib/golGameGrid.h
+Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.o: ../Code/Lib/golGameOfLife.cpp
+Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.o: ../Code/Lib/golGameOfLife.h
+
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.o: ../Code/Lib/golMyFunctions.cpp
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.o: ../Code/Lib/golMyFunctions.h
 

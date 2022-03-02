@@ -68,6 +68,18 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -123,18 +135,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /workspaces/PHAS0100Assignment1/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment1/build/CMakeFiles /workspaces/PHAS0100Assignment1/build/Code/Lib/CMakeFiles/progress.marks
@@ -181,21 +181,6 @@ PHAS0100ASSIGNMENT1: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/rule
 PHAS0100ASSIGNMENT1/fast:
 	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/build.make Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/build
 .PHONY : PHAS0100ASSIGNMENT1/fast
-
-# Convenience name for target.
-Code/Lib/CMakeFiles/golGameGrid.dir/rule:
-	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f CMakeFiles/Makefile2 Code/Lib/CMakeFiles/golGameGrid.dir/rule
-.PHONY : Code/Lib/CMakeFiles/golGameGrid.dir/rule
-
-# Convenience name for target.
-golGameGrid: Code/Lib/CMakeFiles/golGameGrid.dir/rule
-
-.PHONY : golGameGrid
-
-# fast build rule for target.
-golGameGrid/fast:
-	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/golGameGrid.dir/build.make Code/Lib/CMakeFiles/golGameGrid.dir/build
-.PHONY : golGameGrid/fast
 
 golBasicTypes.o: golBasicTypes.cpp.o
 
@@ -258,7 +243,6 @@ golGameGrid.o: golGameGrid.cpp.o
 # target to build an object file
 golGameGrid.cpp.o:
 	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/build.make Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.o
-	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/golGameGrid.dir/build.make Code/Lib/CMakeFiles/golGameGrid.dir/golGameGrid.cpp.o
 .PHONY : golGameGrid.cpp.o
 
 golGameGrid.i: golGameGrid.cpp.i
@@ -268,7 +252,6 @@ golGameGrid.i: golGameGrid.cpp.i
 # target to preprocess a source file
 golGameGrid.cpp.i:
 	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/build.make Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.i
-	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/golGameGrid.dir/build.make Code/Lib/CMakeFiles/golGameGrid.dir/golGameGrid.cpp.i
 .PHONY : golGameGrid.cpp.i
 
 golGameGrid.s: golGameGrid.cpp.s
@@ -278,8 +261,34 @@ golGameGrid.s: golGameGrid.cpp.s
 # target to generate assembly for a file
 golGameGrid.cpp.s:
 	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/build.make Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.s
-	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/golGameGrid.dir/build.make Code/Lib/CMakeFiles/golGameGrid.dir/golGameGrid.cpp.s
 .PHONY : golGameGrid.cpp.s
+
+golGameOfLife.o: golGameOfLife.cpp.o
+
+.PHONY : golGameOfLife.o
+
+# target to build an object file
+golGameOfLife.cpp.o:
+	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/build.make Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.o
+.PHONY : golGameOfLife.cpp.o
+
+golGameOfLife.i: golGameOfLife.cpp.i
+
+.PHONY : golGameOfLife.i
+
+# target to preprocess a source file
+golGameOfLife.cpp.i:
+	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/build.make Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.i
+.PHONY : golGameOfLife.cpp.i
+
+golGameOfLife.s: golGameOfLife.cpp.s
+
+.PHONY : golGameOfLife.s
+
+# target to generate assembly for a file
+golGameOfLife.cpp.s:
+	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/build.make Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.s
+.PHONY : golGameOfLife.cpp.s
 
 golMyFunctions.o: golMyFunctions.cpp.o
 
@@ -315,14 +324,13 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... PHAS0100ASSIGNMENT1"
-	@echo "... install/local"
-	@echo "... golGameGrid"
 	@echo "... golBasicTypes.o"
 	@echo "... golBasicTypes.i"
 	@echo "... golBasicTypes.s"
@@ -332,6 +340,9 @@ help:
 	@echo "... golGameGrid.o"
 	@echo "... golGameGrid.i"
 	@echo "... golGameGrid.s"
+	@echo "... golGameOfLife.o"
+	@echo "... golGameOfLife.i"
+	@echo "... golGameOfLife.s"
 	@echo "... golMyFunctions.o"
 	@echo "... golMyFunctions.i"
 	@echo "... golMyFunctions.s"

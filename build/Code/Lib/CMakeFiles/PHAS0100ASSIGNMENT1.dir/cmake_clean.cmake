@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/PHAS0100ASSIGNMENT1.dir/golBasicTypes.cpp.o"
   "CMakeFiles/PHAS0100ASSIGNMENT1.dir/golException.cpp.o"
   "CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.o"
+  "CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.o"
   "CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.o"
 )
 
