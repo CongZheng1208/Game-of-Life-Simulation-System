@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+Testing/CMakeFiles/golGameGridTest.dir/rule:
+	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f CMakeFiles/Makefile2 Testing/CMakeFiles/golGameGridTest.dir/rule
+.PHONY : Testing/CMakeFiles/golGameGridTest.dir/rule
+
+# Convenience name for target.
+golGameGridTest: Testing/CMakeFiles/golGameGridTest.dir/rule
+
+.PHONY : golGameGridTest
+
+# fast build rule for target.
+golGameGridTest/fast:
+	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Testing/CMakeFiles/golGameGridTest.dir/build.make Testing/CMakeFiles/golGameGridTest.dir/build
+.PHONY : golGameGridTest/fast
+
+# Convenience name for target.
 Testing/CMakeFiles/golCommandLineArgsTest.dir/rule:
 	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f CMakeFiles/Makefile2 Testing/CMakeFiles/golCommandLineArgsTest.dir/rule
 .PHONY : Testing/CMakeFiles/golCommandLineArgsTest.dir/rule
@@ -230,6 +245,7 @@ golCatchMain.o: golCatchMain.cpp.o
 
 # target to build an object file
 golCatchMain.cpp.o:
+	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Testing/CMakeFiles/golGameGridTest.dir/build.make Testing/CMakeFiles/golGameGridTest.dir/golCatchMain.cpp.o
 	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Testing/CMakeFiles/golCommandLineArgsTest.dir/build.make Testing/CMakeFiles/golCommandLineArgsTest.dir/golCatchMain.cpp.o
 	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Testing/CMakeFiles/golBasicTest.dir/build.make Testing/CMakeFiles/golBasicTest.dir/golCatchMain.cpp.o
 .PHONY : golCatchMain.cpp.o
@@ -240,6 +256,7 @@ golCatchMain.i: golCatchMain.cpp.i
 
 # target to preprocess a source file
 golCatchMain.cpp.i:
+	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Testing/CMakeFiles/golGameGridTest.dir/build.make Testing/CMakeFiles/golGameGridTest.dir/golCatchMain.cpp.i
 	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Testing/CMakeFiles/golCommandLineArgsTest.dir/build.make Testing/CMakeFiles/golCommandLineArgsTest.dir/golCatchMain.cpp.i
 	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Testing/CMakeFiles/golBasicTest.dir/build.make Testing/CMakeFiles/golBasicTest.dir/golCatchMain.cpp.i
 .PHONY : golCatchMain.cpp.i
@@ -250,6 +267,7 @@ golCatchMain.s: golCatchMain.cpp.s
 
 # target to generate assembly for a file
 golCatchMain.cpp.s:
+	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Testing/CMakeFiles/golGameGridTest.dir/build.make Testing/CMakeFiles/golGameGridTest.dir/golCatchMain.cpp.s
 	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Testing/CMakeFiles/golCommandLineArgsTest.dir/build.make Testing/CMakeFiles/golCommandLineArgsTest.dir/golCatchMain.cpp.s
 	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Testing/CMakeFiles/golBasicTest.dir/build.make Testing/CMakeFiles/golBasicTest.dir/golCatchMain.cpp.s
 .PHONY : golCatchMain.cpp.s
@@ -281,6 +299,33 @@ golCommandLineArgsTest.cpp.s:
 	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Testing/CMakeFiles/golCommandLineArgsTest.dir/build.make Testing/CMakeFiles/golCommandLineArgsTest.dir/golCommandLineArgsTest.cpp.s
 .PHONY : golCommandLineArgsTest.cpp.s
 
+golGameGridTest.o: golGameGridTest.cpp.o
+
+.PHONY : golGameGridTest.o
+
+# target to build an object file
+golGameGridTest.cpp.o:
+	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Testing/CMakeFiles/golGameGridTest.dir/build.make Testing/CMakeFiles/golGameGridTest.dir/golGameGridTest.cpp.o
+.PHONY : golGameGridTest.cpp.o
+
+golGameGridTest.i: golGameGridTest.cpp.i
+
+.PHONY : golGameGridTest.i
+
+# target to preprocess a source file
+golGameGridTest.cpp.i:
+	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Testing/CMakeFiles/golGameGridTest.dir/build.make Testing/CMakeFiles/golGameGridTest.dir/golGameGridTest.cpp.i
+.PHONY : golGameGridTest.cpp.i
+
+golGameGridTest.s: golGameGridTest.cpp.s
+
+.PHONY : golGameGridTest.s
+
+# target to generate assembly for a file
+golGameGridTest.cpp.s:
+	cd /workspaces/PHAS0100Assignment1/build && $(MAKE) -f Testing/CMakeFiles/golGameGridTest.dir/build.make Testing/CMakeFiles/golGameGridTest.dir/golGameGridTest.cpp.s
+.PHONY : golGameGridTest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -291,6 +336,7 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... golGameGridTest"
 	@echo "... install/local"
 	@echo "... golCommandLineArgsTest"
 	@echo "... edit_cache"
@@ -305,6 +351,9 @@ help:
 	@echo "... golCommandLineArgsTest.o"
 	@echo "... golCommandLineArgsTest.i"
 	@echo "... golCommandLineArgsTest.s"
+	@echo "... golGameGridTest.o"
+	@echo "... golGameGridTest.i"
+	@echo "... golGameGridTest.s"
 .PHONY : help
 
 

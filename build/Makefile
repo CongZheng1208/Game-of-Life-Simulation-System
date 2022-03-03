@@ -584,6 +584,19 @@ golMyFirstApp/fast:
 .PHONY : golMyFirstApp/fast
 
 #=============================================================================
+# Target rules for targets named golGameGridTest
+
+# Build rule for target.
+golGameGridTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 golGameGridTest
+.PHONY : golGameGridTest
+
+# fast build rule for target.
+golGameGridTest/fast:
+	$(MAKE) -f Testing/CMakeFiles/golGameGridTest.dir/build.make Testing/CMakeFiles/golGameGridTest.dir/build
+.PHONY : golGameGridTest/fast
+
+#=============================================================================
 # Target rules for targets named golCommandLineArgsTest
 
 # Build rule for target.
@@ -654,6 +667,7 @@ help:
 	@echo "... golStillLife"
 	@echo "... golSimulator"
 	@echo "... golMyFirstApp"
+	@echo "... golGameGridTest"
 	@echo "... golCommandLineArgsTest"
 	@echo "... golBasicTest"
 .PHONY : help
