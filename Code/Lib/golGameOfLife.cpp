@@ -16,28 +16,53 @@
 
 namespace gol {
 
-int main(int argc,char *argv[]){
-    int gen = 0;
-    int pattern;
-    int wid, hei, num;
-    std::string filename; 
-  
-    world w(5, 6, 10);
-    w.show(); 
-        
-    /*
-    world w(filename);
-    w.show(); 
-    rule rll(&w);
-    cout<<"!!!"<<endl;
-    for(int i = 0; i<gen;i++){
-        rll.showGame();
-        rll.applyRules();
-        rll.swapWrds();
-        std::this_thread::sleep_for (std::chrono::seconds(1));*/
-    
+GameOfLife::GameOfLife( GameGrid* gamegrid ) : grid_now( gamegrid ) {
+    grid_next = new GameGrid( grid_now->GetWid(), grid_now->GetHei() );
+}
+GameOfLife::~GameOfLife() {
+    if( grid_next ) delete grid_next;
+}
+bool GameOfLife::HasLivingCells() {
+    for( int y = 0; y < grid_now->GetHei(); y++ )
+        for( int x = 0; x < grid_now->GetWid(); x++ )
+            if( grid_now->GetCell( x, y ) ) return true;
+    return false;
+}
+void GameOfLife::SwapGrids() {
+    grid_now->SwapCells( grid_next );
+}
 
-    return 0;
+bool GameOfLife::IsStillLifes(){
+    for( int y = 0; y < grid_now->GetHei(); y++ )
+        for( int x = 0; x < grid_now->GetWid(); x++ )
+            if( grid_now->GetCell( x, y )!= grid_next->GetCell( x, y )) return false;
+    return true;
+}
+void GameOfLife::TakeStep() {
+    int neighbours_number;
+    for( int y = 0; y < grid_now->GetHei(); y++ ) {
+        for( int x = 0; x < grid_now->GetWid(); x++ ) {
+            neighbours_number = grid_now->Neighbours( x, y );
+            //1. If the number of neighbors of a living cell is 2 or 3, the cell can continue to survive
+            //2. If the number of neighbors of a dead cell is 3, the cell can be resurrected
+            //3. If the number of living cell neighbors is less than 2 and more than 3, it will die immediately
+            if( grid_now->GetCell( x, y ) ) {
+                if(neighbours_number == 2 || neighbours_number==3){
+                    grid_next->SetCell( x, y, 1 );
+                }else{
+                    grid_next->SetCell( x, y, 0 );
+                }
+            } else if(neighbours_number==3) {
+                grid_next->SetCell( x, y, 1 );
+            }else{
+                grid_next->SetCell( x, y, 0 );
+            }
+        }
+    }
+}
+void GameOfLife::PrintGridForGame() {
+    grid_now->PrintGrid();
+    std::cout << "<----------Inter-iteration-separator---------------->" << std::endl;
 }
 
 } // end namespace
