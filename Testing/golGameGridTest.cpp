@@ -25,12 +25,12 @@ TEST_CASE("check GameGrid GetCell ","[GameGrid]"){
         REQUIRE(gameGrid.GetCell(0,2)==0);
         REQUIRE(gameGrid.GetCell(1,2)==0);
         REQUIRE(gameGrid.GetCell(2,2)==1);
-        REQUIRE(gameGrid.GetCell(3,2)==1);
+        REQUIRE(gameGrid.GetCell(3,2)==0);
     }
 
     SECTION("check GameGrid GetCell output","[GameGrid]"){
-        REQUIRE(gameGrid.GetCell(1,2)==1);
-        REQUIRE(gameGrid.GetCell(-1,2)==1);
+        REQUIRE(gameGrid.GetCell(1,2)==0);
+        REQUIRE(gameGrid.GetCell(-1,2)==0);
         REQUIRE(gameGrid.GetCell(2,-3)==0);
         REQUIRE(gameGrid.GetCell(2,300)==0);
         REQUIRE(gameGrid.GetCell(2,-300)==0);
@@ -115,11 +115,11 @@ TEST_CASE("check number of neighbours","[GameGrid]"){
 
     SECTION("check output for conut neighbours function","[GameGrid]"){
         REQUIRE(gameGrid.Neighbours(0,0)==0);
-        REQUIRE(gameGrid.Neighbours(0,1)==1);
-        REQUIRE(gameGrid.Neighbours(0,2)==1);
-        REQUIRE(gameGrid.Neighbours(1,0)==0);
+        REQUIRE(gameGrid.Neighbours(0,1)==0);
+        REQUIRE(gameGrid.Neighbours(0,2)==0);
+        REQUIRE(gameGrid.Neighbours(1,0)==1);
         REQUIRE(gameGrid.Neighbours(1,1)==2);
-        REQUIRE(gameGrid.Neighbours(2,1)==3);
+        REQUIRE(gameGrid.Neighbours(2,1)==1);
     }
 
     SECTION("check input for conut neighbours function","[GameGrid]"){
@@ -139,18 +139,18 @@ TEST_CASE("check TakeStep function","[GameOfLife]"){
     gol::GameOfLife gameOfLife(&gameGrid);
     gameOfLife.TakeStep();
 
-    REQUIRE(gameOfLife.GetNowGrid()->GetCell(1,1)==1);
-    REQUIRE(gameOfLife.GetNowGrid()->GetCell(1,2)==1);
+    REQUIRE(gameOfLife.GetNowGrid()->GetCell(1,1)==0);
+    REQUIRE(gameOfLife.GetNowGrid()->GetCell(1,2)==0);
     REQUIRE(gameOfLife.GetNowGrid()->GetCell(1,3)==0);
-    REQUIRE(gameOfLife.GetNowGrid()->GetCell(2,1)==0);
+    REQUIRE(gameOfLife.GetNowGrid()->GetCell(2,1)==1);
     REQUIRE(gameOfLife.GetNowGrid()->GetCell(2,2)==1);
-    REQUIRE(gameOfLife.GetNowGrid()->GetCell(2,3)==0);
+    REQUIRE(gameOfLife.GetNowGrid()->GetCell(2,3)==1);
 
     REQUIRE(gameOfLife.GetNextGrid()->GetCell(1,1)==0);
-    REQUIRE(gameOfLife.GetNextGrid()->GetCell(1,2)==0);
+    REQUIRE(gameOfLife.GetNextGrid()->GetCell(1,2)==1);
     REQUIRE(gameOfLife.GetNextGrid()->GetCell(1,3)==0);
-    REQUIRE(gameOfLife.GetNextGrid()->GetCell(2,1)==1);
+    REQUIRE(gameOfLife.GetNextGrid()->GetCell(2,1)==0);
     REQUIRE(gameOfLife.GetNextGrid()->GetCell(2,2)==1);
-    REQUIRE(gameOfLife.GetNextGrid()->GetCell(2,3)==1);
+    REQUIRE(gameOfLife.GetNextGrid()->GetCell(2,3)==0);
 }
 
