@@ -41,15 +41,6 @@ typedef unsigned char byte;
 std::string ReadFileIntoString(const std::string& path) {
     //This function is used to read the file in .txt format and store the content in a string
     std::ifstream input_file(path);
-    try {
-            if (!input_file) {
-                throw std::runtime_error("No file exists");
-            }
-        }
-        catch (std::exception& error) {
-            std::cerr << "Caught Exception: " << error.what() << std::endl;
-            throw;
-        }
     return std::string((std::istreambuf_iterator<char>(input_file)), std::istreambuf_iterator<char>());
 }
 
@@ -72,14 +63,7 @@ GameGrid::GameGrid( int x, int y ) : _wid( x ), _hei( y ) {
     memset( _cells, 0, space_required );
 }
 GameGrid::GameGrid( int x, int y, int alive_cells_num ) : _wid( x ), _hei( y ) {
-    try{
-        if(x<0||y<0||alive_cells_num<0||alive_cells_num>x*y){
-            throw std::runtime_error("Parameters do not meet the requirements!");
-        }          
-    }catch (std::exception& error){
-        std::cerr<<"Caught Exception: "<<error.what()<<std::endl;
-        throw;
-    }
+    ValidForRandom(x, y, alive_cells_num);
     int space_required = _wid * _hei * sizeof(byte);
     _cells = new byte[space_required];
     memset( _cells, 0, space_required );
@@ -100,6 +84,7 @@ GameGrid::GameGrid( int x, int y, int alive_cells_num ) : _wid( x ), _hei( y ) {
 }
 GameGrid::GameGrid(std::string filename){
     std::ifstream infile;
+    ValidForFile(filename);
     std::string file_contents = ReadFileIntoString(filename);
     //Remove all spaces in the read content
     file_contents = ClearAllSpace(file_contents);
@@ -188,5 +173,30 @@ int GameGrid::Neighbours( int x, int y ) {
     }
     return neighbours_num;
 }
+
+void GameGrid::ValidForRandom(int x, int y, int alive_cells_num){
+     try{
+        if(x<0||y<0||alive_cells_num<0||alive_cells_num>x*y){
+            throw std::runtime_error("Parameters do not meet the requirements!");
+        }          
+    }catch (std::exception& error){
+        std::cerr<<"Caught Exception: "<<error.what()<<std::endl;
+        throw;
+    }
+}
+
+void GameGrid::ValidForFile(const std::string& path){
+    std::ifstream input_file(path);
+    try {
+            if (!input_file) {
+                throw std::runtime_error("No file exists");
+            }
+        }
+        catch (std::exception& error) {
+            std::cerr << "Caught Exception: " << error.what() << std::endl;
+            throw;
+        }
+}
+
 
 } // end namespace

@@ -92,23 +92,23 @@ TEST_CASE(" check the number of alive cells","[GameGrid]"){
     }
     REQUIRE(sum==20);
 }
-/*
+
 TEST_CASE("check input of parameters","[GameGrid]"){
-    REQUIRE_NOTHROW(gol::GameGrid gameGrid(10,10,5));
-    REQUIRE_NOTHROW(gol::GameGrid gameGrid(20,10,3));
-    REQUIRE_THROWS(gol::GameGrid gameGrid(-3,10,4));
-    REQUIRE_THROWS(gol::GameGrid gameGrid(20,-20,3));
-    REQUIRE_THROWS(gol::GameGrid gameGrid(-2,-2,1));
-    REQUIRE_THROWS(gol::GameGrid gameGrid(10,10,-5));
+    gol::GameGrid gameGrid;
+    REQUIRE_NOTHROW(gameGrid.ValidForRandom(10,10,5));
+    REQUIRE_NOTHROW(gameGrid.ValidForRandom(20,10,3));
+    REQUIRE_THROWS(gameGrid.ValidForRandom(-3,10,4));
+    REQUIRE_THROWS(gameGrid.ValidForRandom(20,-20,3));
+    REQUIRE_THROWS(gameGrid.ValidForRandom(-2,-2,1));
 }
 
-TEST_CASE("check input of file path","[GameGrid]"){
-    REQUIRE_NOTHROW(gol::GameGrid gameGrid("../../Testing/Data/glider.txt"));
-    REQUIRE_NOTHROW(gol::GameGrid gameGrid("../../Testing/Data/oscillators.txt"));
-    REQUIRE_THROWS(gol::GameGrid gameGrid("../../Testing/Data/gliderXXX.txt"));
-    REQUIRE_THROWS(gol::GameGrid gameGrid("../../Testing/DaXXXta/glider.txt"));
-    REQUIRE_THROWS(gol::GameGrid gameGrid("../../TestingXXX/Data/glider.txt"));
-}*/
+TEST_CASE("check input of file path","[]"){
+    gol::GameGrid gameGrid;
+    REQUIRE_NOTHROW(gameGrid.ValidForFile("../Testing/Data/glider.txt"));
+    REQUIRE_NOTHROW(gameGrid.ValidForFile("../Testing/Data/oscillators.txt"));
+    REQUIRE_THROWS(gameGrid.ValidForFile("../Testing/Data/gliderXXX.txt"));
+    REQUIRE_THROWS(gameGrid.ValidForFile("../Testing/DaXXXta/glider.txt"));
+}
 
 TEST_CASE("check number of neighbours","[GameGrid]"){
     gol::GameGrid gameGrid("../Testing/Data/oscillators.txt");

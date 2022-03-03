@@ -62,6 +62,8 @@ public:
     void SwapCells( GameGrid* gamegrid );
     void PrintGrid();
     int Neighbours( int x, int y );
+    void ValidForRandom(int x, int y, int alive_cells_num);
+    void ValidForFile(const std::string& path);
 
 private:
     int _wid, _hei;
