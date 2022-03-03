@@ -29,3 +29,12 @@ foreach(_app1 ${_command_line_apps1})
   add_executable(${_app1} ${_app1}.cpp)
   target_link_libraries(${_app1} ${PHAS0100ASSIGNMENT1_LIBRARIES} ${ALL_THIRD_PARTY_LIBRARIES})
 endforeach()
+
+set(_command_line_apps1
+  golStillLife
+)
+
+foreach(_app2 ${_command_line_apps1})
+  add_executable(${_app2} ${_app2}.cpp)
+  target_link_libraries(${_app2} ${PHAS0100ASSIGNMENT1_LIBRARIES} ${ALL_THIRD_PARTY_LIBRARIES})
+endforeach()
