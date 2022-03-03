@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/workspaces/PHAS0100Assignment1/Code/CommandLineApps/golMyFirstApp.cpp" "/workspaces/PHAS0100Assignment1/build/Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/golMyFirstApp.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

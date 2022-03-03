@@ -60,15 +60,15 @@ include Code/CommandLineApps/CMakeFiles/golSimulator.dir/flags.make
 Code/CommandLineApps/CMakeFiles/golSimulator.dir/golSimulator.cpp.o: Code/CommandLineApps/CMakeFiles/golSimulator.dir/flags.make
 Code/CommandLineApps/CMakeFiles/golSimulator.dir/golSimulator.cpp.o: ../Code/CommandLineApps/golSimulator.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Code/CommandLineApps/CMakeFiles/golSimulator.dir/golSimulator.cpp.o"
-	cd /workspaces/PHAS0100Assignment1/build/Code/CommandLineApps && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/golSimulator.dir/golSimulator.cpp.o -c /workspaces/PHAS0100Assignment1/Code/CommandLineApps/golSimulator.cpp
+	cd /workspaces/PHAS0100Assignment1/build/Code/CommandLineApps && /bin/clang++-10  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/golSimulator.dir/golSimulator.cpp.o -c /workspaces/PHAS0100Assignment1/Code/CommandLineApps/golSimulator.cpp
 
 Code/CommandLineApps/CMakeFiles/golSimulator.dir/golSimulator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/golSimulator.dir/golSimulator.cpp.i"
-	cd /workspaces/PHAS0100Assignment1/build/Code/CommandLineApps && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Code/CommandLineApps/golSimulator.cpp > CMakeFiles/golSimulator.dir/golSimulator.cpp.i
+	cd /workspaces/PHAS0100Assignment1/build/Code/CommandLineApps && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Code/CommandLineApps/golSimulator.cpp > CMakeFiles/golSimulator.dir/golSimulator.cpp.i
 
 Code/CommandLineApps/CMakeFiles/golSimulator.dir/golSimulator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/golSimulator.dir/golSimulator.cpp.s"
-	cd /workspaces/PHAS0100Assignment1/build/Code/CommandLineApps && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Code/CommandLineApps/golSimulator.cpp -o CMakeFiles/golSimulator.dir/golSimulator.cpp.s
+	cd /workspaces/PHAS0100Assignment1/build/Code/CommandLineApps && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Code/CommandLineApps/golSimulator.cpp -o CMakeFiles/golSimulator.dir/golSimulator.cpp.s
 
 # Object files for target golSimulator
 golSimulator_OBJECTS = \

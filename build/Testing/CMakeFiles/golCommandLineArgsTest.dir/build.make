@@ -60,28 +60,28 @@ include Testing/CMakeFiles/golCommandLineArgsTest.dir/flags.make
 Testing/CMakeFiles/golCommandLineArgsTest.dir/golCommandLineArgsTest.cpp.o: Testing/CMakeFiles/golCommandLineArgsTest.dir/flags.make
 Testing/CMakeFiles/golCommandLineArgsTest.dir/golCommandLineArgsTest.cpp.o: ../Testing/golCommandLineArgsTest.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Testing/CMakeFiles/golCommandLineArgsTest.dir/golCommandLineArgsTest.cpp.o"
-	cd /workspaces/PHAS0100Assignment1/build/Testing && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/golCommandLineArgsTest.dir/golCommandLineArgsTest.cpp.o -c /workspaces/PHAS0100Assignment1/Testing/golCommandLineArgsTest.cpp
+	cd /workspaces/PHAS0100Assignment1/build/Testing && /bin/clang++-10  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/golCommandLineArgsTest.dir/golCommandLineArgsTest.cpp.o -c /workspaces/PHAS0100Assignment1/Testing/golCommandLineArgsTest.cpp
 
 Testing/CMakeFiles/golCommandLineArgsTest.dir/golCommandLineArgsTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/golCommandLineArgsTest.dir/golCommandLineArgsTest.cpp.i"
-	cd /workspaces/PHAS0100Assignment1/build/Testing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Testing/golCommandLineArgsTest.cpp > CMakeFiles/golCommandLineArgsTest.dir/golCommandLineArgsTest.cpp.i
+	cd /workspaces/PHAS0100Assignment1/build/Testing && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Testing/golCommandLineArgsTest.cpp > CMakeFiles/golCommandLineArgsTest.dir/golCommandLineArgsTest.cpp.i
 
 Testing/CMakeFiles/golCommandLineArgsTest.dir/golCommandLineArgsTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/golCommandLineArgsTest.dir/golCommandLineArgsTest.cpp.s"
-	cd /workspaces/PHAS0100Assignment1/build/Testing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Testing/golCommandLineArgsTest.cpp -o CMakeFiles/golCommandLineArgsTest.dir/golCommandLineArgsTest.cpp.s
+	cd /workspaces/PHAS0100Assignment1/build/Testing && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Testing/golCommandLineArgsTest.cpp -o CMakeFiles/golCommandLineArgsTest.dir/golCommandLineArgsTest.cpp.s
 
 Testing/CMakeFiles/golCommandLineArgsTest.dir/golCatchMain.cpp.o: Testing/CMakeFiles/golCommandLineArgsTest.dir/flags.make
 Testing/CMakeFiles/golCommandLineArgsTest.dir/golCatchMain.cpp.o: ../Testing/golCatchMain.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Testing/CMakeFiles/golCommandLineArgsTest.dir/golCatchMain.cpp.o"
-	cd /workspaces/PHAS0100Assignment1/build/Testing && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/golCommandLineArgsTest.dir/golCatchMain.cpp.o -c /workspaces/PHAS0100Assignment1/Testing/golCatchMain.cpp
+	cd /workspaces/PHAS0100Assignment1/build/Testing && /bin/clang++-10  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/golCommandLineArgsTest.dir/golCatchMain.cpp.o -c /workspaces/PHAS0100Assignment1/Testing/golCatchMain.cpp
 
 Testing/CMakeFiles/golCommandLineArgsTest.dir/golCatchMain.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/golCommandLineArgsTest.dir/golCatchMain.cpp.i"
-	cd /workspaces/PHAS0100Assignment1/build/Testing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Testing/golCatchMain.cpp > CMakeFiles/golCommandLineArgsTest.dir/golCatchMain.cpp.i
+	cd /workspaces/PHAS0100Assignment1/build/Testing && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Testing/golCatchMain.cpp > CMakeFiles/golCommandLineArgsTest.dir/golCatchMain.cpp.i
 
 Testing/CMakeFiles/golCommandLineArgsTest.dir/golCatchMain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/golCommandLineArgsTest.dir/golCatchMain.cpp.s"
-	cd /workspaces/PHAS0100Assignment1/build/Testing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Testing/golCatchMain.cpp -o CMakeFiles/golCommandLineArgsTest.dir/golCatchMain.cpp.s
+	cd /workspaces/PHAS0100Assignment1/build/Testing && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Testing/golCatchMain.cpp -o CMakeFiles/golCommandLineArgsTest.dir/golCatchMain.cpp.s
 
 # Object files for target golCommandLineArgsTest
 golCommandLineArgsTest_OBJECTS = \

@@ -60,15 +60,15 @@ include Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/flags.make
 Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/golMyFirstApp.cpp.o: Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/flags.make
 Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/golMyFirstApp.cpp.o: ../Code/CommandLineApps/golMyFirstApp.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/golMyFirstApp.cpp.o"
-	cd /workspaces/PHAS0100Assignment1/build/Code/CommandLineApps && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/golMyFirstApp.dir/golMyFirstApp.cpp.o -c /workspaces/PHAS0100Assignment1/Code/CommandLineApps/golMyFirstApp.cpp
+	cd /workspaces/PHAS0100Assignment1/build/Code/CommandLineApps && /bin/clang++-10  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/golMyFirstApp.dir/golMyFirstApp.cpp.o -c /workspaces/PHAS0100Assignment1/Code/CommandLineApps/golMyFirstApp.cpp
 
 Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/golMyFirstApp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/golMyFirstApp.dir/golMyFirstApp.cpp.i"
-	cd /workspaces/PHAS0100Assignment1/build/Code/CommandLineApps && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Code/CommandLineApps/golMyFirstApp.cpp > CMakeFiles/golMyFirstApp.dir/golMyFirstApp.cpp.i
+	cd /workspaces/PHAS0100Assignment1/build/Code/CommandLineApps && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Code/CommandLineApps/golMyFirstApp.cpp > CMakeFiles/golMyFirstApp.dir/golMyFirstApp.cpp.i
 
 Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/golMyFirstApp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/golMyFirstApp.dir/golMyFirstApp.cpp.s"
-	cd /workspaces/PHAS0100Assignment1/build/Code/CommandLineApps && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Code/CommandLineApps/golMyFirstApp.cpp -o CMakeFiles/golMyFirstApp.dir/golMyFirstApp.cpp.s
+	cd /workspaces/PHAS0100Assignment1/build/Code/CommandLineApps && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Code/CommandLineApps/golMyFirstApp.cpp -o CMakeFiles/golMyFirstApp.dir/golMyFirstApp.cpp.s
 
 # Object files for target golMyFirstApp
 golMyFirstApp_OBJECTS = \

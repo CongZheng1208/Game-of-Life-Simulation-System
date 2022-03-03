@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/workspaces/PHAS0100Assignment1/Testing/golBasicTest.cpp" "/workspaces/PHAS0100Assignment1/build/Testing/CMakeFiles/golBasicTest.dir/golBasicTest.cpp.o"
   "/workspaces/PHAS0100Assignment1/Testing/golCatchMain.cpp" "/workspaces/PHAS0100Assignment1/build/Testing/CMakeFiles/golBasicTest.dir/golCatchMain.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

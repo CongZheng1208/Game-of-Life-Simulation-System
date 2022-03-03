@@ -62,8 +62,8 @@ UpdateOptions:
 UpdateType: git
 
 # Compiler info
-Compiler: /usr/bin/c++
-CompilerVersion: 9.3.0
+Compiler: /bin/clang++-10
+CompilerVersion: 10.0.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 

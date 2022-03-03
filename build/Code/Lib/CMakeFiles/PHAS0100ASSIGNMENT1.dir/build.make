@@ -60,67 +60,67 @@ include Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/flags.make
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golBasicTypes.cpp.o: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/flags.make
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golBasicTypes.cpp.o: ../Code/Lib/golBasicTypes.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golBasicTypes.cpp.o"
-	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golBasicTypes.cpp.o -c /workspaces/PHAS0100Assignment1/Code/Lib/golBasicTypes.cpp
+	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /bin/clang++-10  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golBasicTypes.cpp.o -c /workspaces/PHAS0100Assignment1/Code/Lib/golBasicTypes.cpp
 
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golBasicTypes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PHAS0100ASSIGNMENT1.dir/golBasicTypes.cpp.i"
-	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Code/Lib/golBasicTypes.cpp > CMakeFiles/PHAS0100ASSIGNMENT1.dir/golBasicTypes.cpp.i
+	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Code/Lib/golBasicTypes.cpp > CMakeFiles/PHAS0100ASSIGNMENT1.dir/golBasicTypes.cpp.i
 
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golBasicTypes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PHAS0100ASSIGNMENT1.dir/golBasicTypes.cpp.s"
-	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Code/Lib/golBasicTypes.cpp -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golBasicTypes.cpp.s
+	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Code/Lib/golBasicTypes.cpp -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golBasicTypes.cpp.s
 
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.o: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/flags.make
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.o: ../Code/Lib/golMyFunctions.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.o"
-	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.o -c /workspaces/PHAS0100Assignment1/Code/Lib/golMyFunctions.cpp
+	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /bin/clang++-10  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.o -c /workspaces/PHAS0100Assignment1/Code/Lib/golMyFunctions.cpp
 
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.i"
-	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Code/Lib/golMyFunctions.cpp > CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.i
+	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Code/Lib/golMyFunctions.cpp > CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.i
 
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.s"
-	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Code/Lib/golMyFunctions.cpp -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.s
+	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Code/Lib/golMyFunctions.cpp -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golMyFunctions.cpp.s
 
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golException.cpp.o: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/flags.make
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golException.cpp.o: ../Code/Lib/golException.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golException.cpp.o"
-	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golException.cpp.o -c /workspaces/PHAS0100Assignment1/Code/Lib/golException.cpp
+	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /bin/clang++-10  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golException.cpp.o -c /workspaces/PHAS0100Assignment1/Code/Lib/golException.cpp
 
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PHAS0100ASSIGNMENT1.dir/golException.cpp.i"
-	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Code/Lib/golException.cpp > CMakeFiles/PHAS0100ASSIGNMENT1.dir/golException.cpp.i
+	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Code/Lib/golException.cpp > CMakeFiles/PHAS0100ASSIGNMENT1.dir/golException.cpp.i
 
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PHAS0100ASSIGNMENT1.dir/golException.cpp.s"
-	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Code/Lib/golException.cpp -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golException.cpp.s
+	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Code/Lib/golException.cpp -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golException.cpp.s
 
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.o: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/flags.make
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.o: ../Code/Lib/golGameGrid.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.o"
-	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.o -c /workspaces/PHAS0100Assignment1/Code/Lib/golGameGrid.cpp
+	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /bin/clang++-10  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.o -c /workspaces/PHAS0100Assignment1/Code/Lib/golGameGrid.cpp
 
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.i"
-	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Code/Lib/golGameGrid.cpp > CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.i
+	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Code/Lib/golGameGrid.cpp > CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.i
 
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.s"
-	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Code/Lib/golGameGrid.cpp -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.s
+	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Code/Lib/golGameGrid.cpp -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameGrid.cpp.s
 
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.o: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/flags.make
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.o: ../Code/Lib/golGameOfLife.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.o"
-	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.o -c /workspaces/PHAS0100Assignment1/Code/Lib/golGameOfLife.cpp
+	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /bin/clang++-10  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.o -c /workspaces/PHAS0100Assignment1/Code/Lib/golGameOfLife.cpp
 
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.i"
-	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Code/Lib/golGameOfLife.cpp > CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.i
+	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment1/Code/Lib/golGameOfLife.cpp > CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.i
 
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.s"
-	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Code/Lib/golGameOfLife.cpp -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.s
+	cd /workspaces/PHAS0100Assignment1/build/Code/Lib && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment1/Code/Lib/golGameOfLife.cpp -o CMakeFiles/PHAS0100ASSIGNMENT1.dir/golGameOfLife.cpp.s
 
 # Object files for target PHAS0100ASSIGNMENT1
 PHAS0100ASSIGNMENT1_OBJECTS = \

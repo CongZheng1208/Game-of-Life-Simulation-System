@@ -123,6 +123,7 @@ Code/clean: Code/CommandLineApps/clean
 # Directory level rules for directory Code/CommandLineApps
 
 # Recursive "all" directory target.
+Code/CommandLineApps/all: Code/CommandLineApps/CMakeFiles/golStillLife.dir/all
 Code/CommandLineApps/all: Code/CommandLineApps/CMakeFiles/golSimulator.dir/all
 Code/CommandLineApps/all: Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/all
 
@@ -134,6 +135,7 @@ Code/CommandLineApps/preinstall:
 .PHONY : Code/CommandLineApps/preinstall
 
 # Recursive "clean" directory target.
+Code/CommandLineApps/clean: Code/CommandLineApps/CMakeFiles/golStillLife.dir/clean
 Code/CommandLineApps/clean: Code/CommandLineApps/CMakeFiles/golSimulator.dir/clean
 Code/CommandLineApps/clean: Code/CommandLineApps/CMakeFiles/golMyFirstApp.dir/clean
 
@@ -959,6 +961,33 @@ PHAS0100ASSIGNMENT1: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/rule
 Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/clean:
 	$(MAKE) -f Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/build.make Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/clean
 .PHONY : Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/clean
+
+#=============================================================================
+# Target rules for target Code/CommandLineApps/CMakeFiles/golStillLife.dir
+
+# All Build rule for target.
+Code/CommandLineApps/CMakeFiles/golStillLife.dir/all: Code/Lib/CMakeFiles/PHAS0100ASSIGNMENT1.dir/all
+	$(MAKE) -f Code/CommandLineApps/CMakeFiles/golStillLife.dir/build.make Code/CommandLineApps/CMakeFiles/golStillLife.dir/depend
+	$(MAKE) -f Code/CommandLineApps/CMakeFiles/golStillLife.dir/build.make Code/CommandLineApps/CMakeFiles/golStillLife.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/PHAS0100Assignment1/build/CMakeFiles --progress-num=17,18 "Built target golStillLife"
+.PHONY : Code/CommandLineApps/CMakeFiles/golStillLife.dir/all
+
+# Build rule for subdir invocation for target.
+Code/CommandLineApps/CMakeFiles/golStillLife.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment1/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 Code/CommandLineApps/CMakeFiles/golStillLife.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment1/build/CMakeFiles 0
+.PHONY : Code/CommandLineApps/CMakeFiles/golStillLife.dir/rule
+
+# Convenience name for target.
+golStillLife: Code/CommandLineApps/CMakeFiles/golStillLife.dir/rule
+
+.PHONY : golStillLife
+
+# clean rule for target.
+Code/CommandLineApps/CMakeFiles/golStillLife.dir/clean:
+	$(MAKE) -f Code/CommandLineApps/CMakeFiles/golStillLife.dir/build.make Code/CommandLineApps/CMakeFiles/golStillLife.dir/clean
+.PHONY : Code/CommandLineApps/CMakeFiles/golStillLife.dir/clean
 
 #=============================================================================
 # Target rules for target Code/CommandLineApps/CMakeFiles/golSimulator.dir
