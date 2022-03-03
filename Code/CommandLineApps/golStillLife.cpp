@@ -28,13 +28,10 @@ int main( int argc, char* argv[] ) {
 
         if ((strcmp(argv[1], "--help")==0) || (strcmp(argv[1], "-h") == 0)) {
             //If the input parameter is -h or --help
-            std::cout<<"Hello user! Welcome to the GameLife Simulation application. \n";
-            std::cout<<"You can choose one of the following two options for initializing your grid. \n";
-            std::cout<<" 1. Enter a text file. The input command has two parameters, the file path and the number of iterations to try. For example.\n";
-            std::cout<<" ./bin/gofSimulator/Testing/Data/glider.txt 10 \n";
-            std::cout<<" 2: Enter the grid parameters for the random initial conditions. The input command has 4 parameters, rows, columns, number of surviving cells and the number of iterations per grid. Starting with the contents of a random cell for the initial condition, the statement is as follows.\n";
-            std::cout<<" ./bin/gofSimulator 20 12 30 10 \n";
-            std::cout<<"More information is provided by the command --help ot -h\n";
+            std::cout<<"Hello users! Welcome to the GameLife golStillLife application.\n";
+            std::cout<<"Apply a mesh based on the given parameters and use the loop solver to find still life. You can initialize your mesh by entering parameters.\n";
+            std::cout<<"The input command has 4 parameters, rows, columns, the number of surviving cells and the number of iterations per mesh. The statements are as follows.\n";
+            std::cout<<"        ./bin/golStillLife 20 12 30 10";
         }else if (argc == 5){
             //If the number of input parameters is 5
             int wid = std::atoi(argv[1]);

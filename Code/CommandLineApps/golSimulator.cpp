@@ -28,10 +28,9 @@ int main(int argc,char *argv[]){
             std::cout<<"Hello user! Welcome to the GameLife Simulation application. \n";
             std::cout<<"You can choose one of the following two options for initializing your grid. \n";
             std::cout<<" 1. Enter a text file. The input command has two parameters, the file path and the number of iterations to try. For example.\n";
-            std::cout<<" ./bin/gofSimulator/Testing/Data/glider.txt 10 \n";
+            std::cout<<" ./bin/golSimulator ../Testing/Data/glider.txt 10 \n";
             std::cout<<" 2: Enter the grid parameters for the random initial conditions. The input command has 4 parameters, rows, columns, number of surviving cells and the number of iterations per grid. Starting with the contents of a random cell for the initial condition, the statement is as follows.\n";
-            std::cout<<" ./bin/gofSimulator 20 12 30 10 \n";
-            std::cout<<"More information is provided by the command --help ot -h\n";
+            std::cout<<" ./bin/golSimulator 20 12 30 10 \n";
         }else if (argc == 3){
             //If the number of input parameters is 2
             pattern = 0;
