@@ -87,7 +87,7 @@ You can specify an input file and thus build a grid of your choice. Based on thi
 The input command has two parameters, the file path and the number of iterations to be attempted. Example.
 
 ```Bash
-./bin/golSimulator ./Testing/Data/glider.txt 3 
+./bin/golSimulator ../Testing/Data/glider.txt 3 
 ```
  The above command represents our determination that the input file is `. /Testing/Data/glider.txt`. Based on this file, the mesh we build will go through ``3`` iterations.
 
@@ -200,7 +200,7 @@ You can customize the size of the specified grid and the total number of initial
 The input command has 4 parameters, rows, columns, the number of surviving cells and the number of iterations for each grid. Example.
 
 ```Bash
-./bin/golStillLifes 4 4 6 10
+./bin/golStillLife 4 4 6 10
 ```
 
 This means that we will generate an initialized grid with ``6`` survival cells with a width of ``4`` and a height of ``4`` and follow the rules for ``10`` iterations.
