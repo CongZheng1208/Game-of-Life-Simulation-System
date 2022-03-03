@@ -18,103 +18,139 @@
 #include <thread>         // std::this_thread::sleep_for
 #include <chrono>         // std::chrono::seconds
 
-TEST_CASE("check grid structure","[GameGrid]"){
-    gol::GameGrid bg(1997,2022);
-    REQUIRE(bg.GetWid()==1997);
-    REQUIRE(bg.GetHei()==2022);
-}
-
-
-//get和set的上界需要判定//set函数的第三个参数需要判定
-TEST_CASE("check grid constructor input","[GameGrid]"){
-    gol::GameGrid bg(1997,2022);
-    REQUIRE_NOTHROW(bg.SetCell(1,2,1));
-    REQUIRE_THROWS(bg.SetCell(-1,-2,1));
-    REQUIRE_THROWS(bg.SetCell(1,-2,1));
-    REQUIRE_THROWS(bg.SetCell(20000,10,1));
-}
-
 TEST_CASE("check GameGrid GetCell ","[GameGrid]"){
-    gol::GameGrid bg("/workspaces/CMakeHelloWorld/glider.txt");
-    REQUIRE(bg.GetCell(0,0)==0);
-    REQUIRE(bg.GetCell(2,0)==1);
+    gol::GameGrid gameGrid("../Testing/Data/oscillators.txt");
+
+    SECTION("check gGameGrid GetCell  input","[GameGrid]") {
+        REQUIRE(gameGrid.GetCell(0,2)==0);
+        REQUIRE(gameGrid.GetCell(1,2)==0);
+        REQUIRE(gameGrid.GetCell(2,2)==1);
+        REQUIRE(gameGrid.GetCell(3,2)==1);
+    }
+
+    SECTION("check GameGrid GetCell output","[GameGrid]"){
+        REQUIRE(gameGrid.GetCell(1,2)==1);
+        REQUIRE(gameGrid.GetCell(-1,2)==1);
+        REQUIRE(gameGrid.GetCell(2,-3)==0);
+        REQUIRE(gameGrid.GetCell(2,300)==0);
+        REQUIRE(gameGrid.GetCell(2,-300)==0);
+    }
 }
 
-TEST_CASE("check GameGrid GetCell input","[GameGrid]"){
-    gol::GameGrid bg("/workspaces/CMakeHelloWorld/glider.txt");
-    REQUIRE_NOTHROW(bg.GetCell(1,1));
-    REQUIRE_THROWS(bg.GetCell(-1,0));
-    REQUIRE_THROWS(bg.GetCell(2,-5));
-    REQUIRE_THROWS(bg.GetCell(2,500));
+TEST_CASE("check grid structure","[GameGrid]"){
+    gol::GameGrid gameGrid(200,120);
+
+    SECTION("check grid object structure","[GameGrid]") {
+        REQUIRE(gameGrid.GetWid()==200);
+        REQUIRE(gameGrid.GetHei()==120);
+    }
+
+    SECTION("check grid constructor input","[GameGrid]") {
+        REQUIRE_NOTHROW(gameGrid.SetCell(10,15,1));
+        REQUIRE_NOTHROW(gameGrid.SetCell(20,30,0));
+        REQUIRE_THROWS(gameGrid.SetCell(10,-45,1));
+        REQUIRE_THROWS(gameGrid.SetCell(-10,-45,1));
+        REQUIRE_THROWS(gameGrid.SetCell(300,15,1));
+        REQUIRE_THROWS(gameGrid.SetCell(-300,15,1));
+    }
+
+    SECTION("check grid statu input","[GameGrid]") {
+        REQUIRE_NOTHROW(gameGrid.SetCell(10,15,1));
+        REQUIRE_NOTHROW(gameGrid.SetCell(10,15,0));
+        REQUIRE_THROWS(gameGrid.SetCell(10,15,2));
+        REQUIRE_THROWS(gameGrid.SetCell(10,15,-1));
+    }
 }
-
-
-TEST_CASE("check number of alive cells","[GameGrid]"){
-    gol::GameGrid bg("/workspaces/CMakeHelloWorld/glider.txt");
-    REQUIRE(bg.Neighbours(0,0)==0);
-    REQUIRE(bg.Neighbours(2,1)==5);
-}
-
-TEST_CASE("check input for conut alive number function","[GameGrid]"){
-    gol::GameGrid bg("/workspaces/CMakeHelloWorld/glider.txt");
-    REQUIRE_NOTHROW(bg.Neighbours(0,0));
-    REQUIRE_THROWS(bg.Neighbours(-2,1));
-    REQUIRE_THROWS(bg.Neighbours(2000,1));
-}
-
-
-/*
-TEST_CASE("check file reader","[GameGrid]"){
-    gol::GameGrid bg;
-    REQUIRE_NOTHROW(bg.FileReader("/workspaces/CMakeHelloWorld/glider.txt"));
-    REQUIRE_THROWS(bg.FileReader("/Datalalala/glider.txt"));
-}*/
-
-/*
-TEST_CASE("check file input data","[GameGrid]"){
-    GameGrid bg;
-    //modify the error input data
-    std::vector<int> error_vector_line = {0,0,0,0,0,0,0,0,0};
-    std::vector<int> error_vector_line_2 = {0,0,0,2,6,0,0,0,0};
-    //modify standard input size
-    int standard_size=10;
-    //modify standard input data
-    std::vector<int> standard_vector_line = {0,0,0,0,0,0,0,0,0,0};
-    REQUIRE_NOTHROW(bg.FileDataValidation(standard_vector_line.size(),standard_size));
-    REQUIRE_THROWS(bg.FileDataValidation(error_vector_line.size(),standard_size));
-    REQUIRE_THROWS(bg.FileDataValidation(error_vector_line_2.size(),standard_size));
-}*/
 
 TEST_CASE(" different patterns of random alive cells","[GameGrid]"){
-    gol::GameGrid bg1(10,10,10);
-    std::this_thread::sleep_for (std::chrono::seconds(1));
-    gol::GameGrid bg2(10,10,10);
+    gol::GameGrid gameGrid1(20,12,20);
+    std::this_thread::sleep_for(std::chrono::seconds(1));
+    gol::GameGrid gameGrid2(20,12,20);
 
     bool equal=true;
-    for (int i = 0; i < bg1.GetWid(); ++i) {
-        for(int j = 0; j < bg1.GetHei(); ++j) {  
-            if(bg1.GetCell(i,j)!=bg2.GetCell(i,j)){
+    for (int i = 0; i < gameGrid1.GetWid(); ++i) {
+        for(int j = 0; j < gameGrid1.GetHei(); ++j) {  
+            if(gameGrid1.GetCell(i,j)!=gameGrid2.GetCell(i,j)){
                 equal=false;
                 break;
             }
-            
         }
     }
-    //If equal==false, which means the aliive cells have different patterens
     REQUIRE(equal==false);
 }
 
-/*
-TEST_CASE("check TakeStep function","[Game]"){
+TEST_CASE(" check the number of alive cells","[GameGrid]"){
+    gol::GameGrid gameGrid(20,12,20);
 
-    gol::GameGrid bg("/workspaces/CMakeHelloWorld/glider.txt");
-    Game g(bg, bg);
-    g.TakeStep();
-    REQUIRE(g.GetcurrentGrid().GetCell(1,1)==1);
-    REQUIRE(g.GetcurrentGrid().GetCell(0,0)==0);
-    REQUIRE(g.GetcurrentGrid().GetCell(1,3)==0);
-    REQUIRE(g.GetcurrentGrid().GetCell(2,1)==0);
-    REQUIRE(g.GetcurrentGrid().GetCell(2,3)==1);
-    REQUIRE(g.GetcurrentGrid().GetCell(3,2)==1);
+    int sum = 0;
+    for (int i = 0; i < gameGrid.GetWid(); ++i) {
+        for(int j = 0; j < gameGrid.GetHei(); ++j) {  
+            if(gameGrid.GetCell(i,j) == 1){
+                sum++;
+            }
+        }
+    }
+    REQUIRE(sum==20);
+}
+/*
+TEST_CASE("check input of parameters","[GameGrid]"){
+    REQUIRE_NOTHROW(gol::GameGrid gameGrid(10,10,5));
+    REQUIRE_NOTHROW(gol::GameGrid gameGrid(20,10,3));
+    REQUIRE_THROWS(gol::GameGrid gameGrid(-3,10,4));
+    REQUIRE_THROWS(gol::GameGrid gameGrid(20,-20,3));
+    REQUIRE_THROWS(gol::GameGrid gameGrid(-2,-2,1));
+    REQUIRE_THROWS(gol::GameGrid gameGrid(10,10,-5));
+}
+
+TEST_CASE("check input of file path","[GameGrid]"){
+    REQUIRE_NOTHROW(gol::GameGrid gameGrid("../../Testing/Data/glider.txt"));
+    REQUIRE_NOTHROW(gol::GameGrid gameGrid("../../Testing/Data/oscillators.txt"));
+    REQUIRE_THROWS(gol::GameGrid gameGrid("../../Testing/Data/gliderXXX.txt"));
+    REQUIRE_THROWS(gol::GameGrid gameGrid("../../Testing/DaXXXta/glider.txt"));
+    REQUIRE_THROWS(gol::GameGrid gameGrid("../../TestingXXX/Data/glider.txt"));
 }*/
+
+TEST_CASE("check number of neighbours","[GameGrid]"){
+    gol::GameGrid gameGrid("../Testing/Data/oscillators.txt");
+
+    SECTION("check output for conut neighbours function","[GameGrid]"){
+        REQUIRE(gameGrid.Neighbours(0,0)==0);
+        REQUIRE(gameGrid.Neighbours(0,1)==1);
+        REQUIRE(gameGrid.Neighbours(0,2)==1);
+        REQUIRE(gameGrid.Neighbours(1,0)==0);
+        REQUIRE(gameGrid.Neighbours(1,1)==2);
+        REQUIRE(gameGrid.Neighbours(2,1)==3);
+    }
+
+    SECTION("check input for conut neighbours function","[GameGrid]"){
+        REQUIRE_NOTHROW(gameGrid.Neighbours(0,0));
+        REQUIRE_NOTHROW(gameGrid.Neighbours(2,4));
+        REQUIRE_THROWS(gameGrid.Neighbours(-2,1));
+        REQUIRE_THROWS(gameGrid.Neighbours(2,-1));
+        REQUIRE_THROWS(gameGrid.Neighbours(1,350));
+        REQUIRE_THROWS(gameGrid.Neighbours(1200,1));
+    }
+}
+
+
+TEST_CASE("check TakeStep function","[GameOfLife]"){
+
+    gol::GameGrid gameGrid("../Testing/Data/oscillators.txt");
+    gol::GameOfLife gameOfLife(&gameGrid);
+    gameOfLife.TakeStep();
+
+    REQUIRE(gameOfLife.GetNowGrid()->GetCell(1,1)==1);
+    REQUIRE(gameOfLife.GetNowGrid()->GetCell(1,2)==1);
+    REQUIRE(gameOfLife.GetNowGrid()->GetCell(1,3)==0);
+    REQUIRE(gameOfLife.GetNowGrid()->GetCell(2,1)==0);
+    REQUIRE(gameOfLife.GetNowGrid()->GetCell(2,2)==1);
+    REQUIRE(gameOfLife.GetNowGrid()->GetCell(2,3)==0);
+
+    REQUIRE(gameOfLife.GetNextGrid()->GetCell(1,1)==0);
+    REQUIRE(gameOfLife.GetNextGrid()->GetCell(1,2)==0);
+    REQUIRE(gameOfLife.GetNextGrid()->GetCell(1,3)==0);
+    REQUIRE(gameOfLife.GetNextGrid()->GetCell(2,1)==1);
+    REQUIRE(gameOfLife.GetNextGrid()->GetCell(2,2)==1);
+    REQUIRE(gameOfLife.GetNextGrid()->GetCell(2,3)==1);
+}
 

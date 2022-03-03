@@ -41,6 +41,15 @@ typedef unsigned char byte;
 std::string ReadFileIntoString(const std::string& path) {
     //This function is used to read the file in .txt format and store the content in a string
     std::ifstream input_file(path);
+    try {
+            if (!input_file) {
+                throw std::runtime_error("No file exists");
+            }
+        }
+        catch (std::exception& error) {
+            std::cerr << "Caught Exception: " << error.what() << std::endl;
+            throw;
+        }
     return std::string((std::istreambuf_iterator<char>(input_file)), std::istreambuf_iterator<char>());
 }
 
@@ -63,6 +72,14 @@ GameGrid::GameGrid( int x, int y ) : _wid( x ), _hei( y ) {
     memset( _cells, 0, space_required );
 }
 GameGrid::GameGrid( int x, int y, int alive_cells_num ) : _wid( x ), _hei( y ) {
+    try{
+        if(x<0||y<0||alive_cells_num<0||alive_cells_num>x*y){
+            throw std::runtime_error("Parameters do not meet the requirements!");
+        }          
+    }catch (std::exception& error){
+        std::cerr<<"Caught Exception: "<<error.what()<<std::endl;
+        throw;
+    }
     int space_required = _wid * _hei * sizeof(byte);
     _cells = new byte[space_required];
     memset( _cells, 0, space_required );
@@ -125,6 +142,14 @@ byte GameGrid::GetCell( int x, int y ) const {
     }
 }
 void GameGrid::SetCell( int x, int y, byte statu ) {
+    try{
+            if(x<0 || y<0 || x>_wid || y>_hei || (statu!=0 && statu!=1)){
+                throw std::runtime_error("Parameters do not meet the requirements!");
+            }           
+        }catch (std::exception& error){
+            std::cerr<<"Caught Exception: "<<error.what()<<std::endl;
+            throw;
+        }
     _cells[x + y * _wid] = statu;
 }
 void GameGrid::SwapCells( GameGrid* gamegrid ) {
@@ -143,6 +168,14 @@ void GameGrid::PrintGrid() {
 }
 
 int GameGrid::Neighbours( int x, int y ) {
+    try{
+            if(x<0||y<0||x>_wid||y>_hei){
+                throw std::runtime_error("Parameters do not meet the requirements!");
+            }
+        }catch (std::exception& error){
+            std::cerr<<"Caught Exception: "<<error.what()<<std::endl;
+            throw;
+        }
     //This function is used to count the number of neighbors around the cell with coordinates x, y
     int neighbours_num = 0, neighbour_x, neighbour_y;
     for( int direction_y = -1; direction_y < 2; direction_y++ ) {

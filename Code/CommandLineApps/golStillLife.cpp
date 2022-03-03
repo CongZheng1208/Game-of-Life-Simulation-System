@@ -49,7 +49,8 @@ int main( int argc, char* argv[] ) {
                 }
 
             // for each cell
-            for(int grid_id = 0; grid_id<2000; grid_id++){
+            for(int grid_id = 0; grid_id<10; grid_id++){
+                std::this_thread::sleep_for(std::chrono::seconds(1));
                 gol::GameGrid gameGrid(wid, hei, num);
                 gol::GameOfLife gameOfLife(&gameGrid);
                 // all need to loop gen times

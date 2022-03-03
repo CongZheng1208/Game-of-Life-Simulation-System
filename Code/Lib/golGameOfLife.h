@@ -45,6 +45,8 @@ class GameOfLife {
 public:
     GameOfLife( GameGrid* gamegrid );
     ~GameOfLife();
+    GameGrid* GetNowGrid();
+    GameGrid* GetNextGrid();
     bool HasLivingCells();
     void SwapGrids();
     bool IsStillLifes();

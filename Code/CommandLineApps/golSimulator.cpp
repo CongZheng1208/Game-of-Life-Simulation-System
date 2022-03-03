@@ -63,6 +63,7 @@ int main(int argc,char *argv[]){
             gol::GameGrid gameGrid(wid, hei, num);
             gol::GameOfLife gameOfLife(&gameGrid);
             for(int i = 0; i<gen;i++){
+                std::this_thread::sleep_for(std::chrono::seconds(1));
                 gameOfLife.PrintGridForGame();
                 gameOfLife.TakeStep();
                 gameOfLife.SwapGrids();

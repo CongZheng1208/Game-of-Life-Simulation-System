@@ -22,6 +22,12 @@ GameOfLife::GameOfLife( GameGrid* gamegrid ) : grid_now( gamegrid ) {
 GameOfLife::~GameOfLife() {
     if( grid_next ) delete grid_next;
 }
+GameGrid* GameOfLife::GetNowGrid() {
+    return grid_now;
+}
+GameGrid* GameOfLife::GetNextGrid() {
+    return grid_next;
+}
 bool GameOfLife::HasLivingCells() {
     for( int y = 0; y < grid_now->GetHei(); y++ )
         for( int x = 0; x < grid_now->GetWid(); x++ )
