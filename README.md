@@ -1,4 +1,4 @@
-PHAS0100ASSIGNMENT1
+Game of Life Simulation System
 ------------------
 
 [![Build Status](https://travis-ci.com/[USERNAME]/PHAS0100Assignment1.svg?branch=master)](https://travis-ci.com/[USERNAME]/PHAS0100Assignment1)
@@ -8,10 +8,8 @@ PHAS0100ASSIGNMENT1
 Purpose
 -------
 
-This project serves as a starting point for the PHAS0100 2021/22 Assignment 1 Game of Life Simulation coursework. It has a reasonable folder structure for [CMake](https://cmake.org/) based projects,
+This project serves as a starting point for the Game of Life Simulation. It has a reasonable folder structure for [CMake](https://cmake.org/) based projects,
 that use [CTest](https://cmake.org/) to run unit tests via [Catch](https://github.com/catchorg/Catch2). 
-
-Further information on the specific project is left as an exercise for the student.
 
 
 Credits
